@@ -37,6 +37,7 @@ public class SignUpFragment extends AicteFragment {
     @Email
     @BindView(R.id.et_email)
     EditText etEmailSignUp;
+    @NotEmpty
     @Password(min = 6)
     @BindView(R.id.et_password)
     EditText etPasswordSignUp;

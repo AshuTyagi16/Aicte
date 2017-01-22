@@ -15,6 +15,7 @@
     <string name="description">DESCRIPTION</string>
     <string name="image">IMAGE</string>
     <string name="live_blogs">Live Blogs</string>
+    <string name="live_blogs_subtitle">Stay updated with new Announcements and blogs.</string>
 
     <string name="signup_with_facebook">SIGN UP WITH FACEBOOK</string>
     <string name="or_text">OR</string>
@@ -145,4 +146,10 @@ A bulletin board (pinboard, pin board or notice board in British English) is a p
 Bulletin boards are particularly prevalent at universities. Many sport dozens, if not hundreds or thousands of public bulletin boards, used for everything from advertisements by extracurricular groups and local shops to official notices. Dormitory corR and Dors, well-trafficked hallways, lobbies, and freestanding kiosks often have cork boards attached to facilitate the posting of notices. \n\n\n
 
 At some universities, lampposts, bollards, trees, and walls often become impromptu posting sites in areas where official boards are sparse in number. Internet forums are becoming a global replacement for traditional bulletins. Online bulletin boards are sometimes referred to as message boards. The terms bulletin board, message boards and even internet forums are interchangeable, although often one bulletin board or message board can contain a number of internet forums or discussion groups. An online board can serve the same purpose as a physical bulletin board. /n/n/n</string>
+
+    <!--ACTIONBAR-->
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
 </resources>

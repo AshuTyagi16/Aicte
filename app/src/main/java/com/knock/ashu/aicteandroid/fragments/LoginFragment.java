@@ -29,12 +29,13 @@ import butterknife.OnClick;
 
 public class LoginFragment extends AicteFragment {
 
-    private Validator validator;
+    protected Validator validator;
 
     @NotEmpty
     @Email
     @BindView(R.id.et_email)
     EditText etEmail;
+    @NotEmpty
     @Password(min = 6)
     @BindView(R.id.et_password)
     EditText etPassword;
@@ -79,8 +80,12 @@ public class LoginFragment extends AicteFragment {
                     @Override
                     public void success(User response) {
                         progressLoader.success();
-                        Toast.makeText(getContext(), "You have logged in successfully", Toast.LENGTH_SHORT).show();
-                        startActivity(MainActivity.newIntent(getContext()));
+                        if (response.getSuccess()) {
+                            Toast.makeText(getContext(), "You have logged in successfully", Toast.LENGTH_SHORT).show();
+                            startActivity(MainActivity.newIntent(getContext()));
+                        }
+                        Toast.makeText(getContext(), "error: " + "email or password is not valid", Toast.LENGTH_SHORT).show();
+
                     }
 
                     @Override

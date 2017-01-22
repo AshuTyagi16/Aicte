@@ -17,12 +17,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".FullInfoActivity" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".CreateBlogActivity" />
+        <activity
+            android:name=".BureausActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GrievanceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReportsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudentsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EducationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BulletinActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LiveBlogsActivity" />
     </application>
 
 </manifest>

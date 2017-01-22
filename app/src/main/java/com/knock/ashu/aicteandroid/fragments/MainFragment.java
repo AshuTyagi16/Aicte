@@ -12,9 +12,17 @@ import android.widget.ImageView;
 import com.cleveroad.fanlayoutmanager.FanLayoutManager;
 import com.cleveroad.fanlayoutmanager.FanLayoutManagerSettings;
 import com.cleveroad.fanlayoutmanager.callbacks.FanChildDrawingOrderCallback;
+import com.knock.ashu.aicteandroid.BulletinActivity;
+import com.knock.ashu.aicteandroid.BureausActivity;
 import com.knock.ashu.aicteandroid.CreateBlogActivity;
-import com.knock.ashu.aicteandroid.FullInfoActivity;
+import com.knock.ashu.aicteandroid.AboutUsActivity;
+import com.knock.ashu.aicteandroid.EducationActivity;
+import com.knock.ashu.aicteandroid.GrievanceActivity;
+import com.knock.ashu.aicteandroid.LiveBlogsActivity;
 import com.knock.ashu.aicteandroid.R;
+import com.knock.ashu.aicteandroid.ReportsActivity;
+import com.knock.ashu.aicteandroid.StatisticsActivity;
+import com.knock.ashu.aicteandroid.StudentsActivity;
 import com.knock.ashu.aicteandroid.models.Card;
 import com.knock.ashu.aicteandroid.views.adapters.adapters.CardsAdapter;
 
@@ -185,7 +193,7 @@ public class MainFragment extends AicteFragment {
         //BLOG CARD
         card = new Card();
         card.setTitle(getResources().getString(R.string.live_blogs));
-        card.setSubtitle(getResources().getString(R.string.bulletin_subtitle));
+        card.setSubtitle(getResources().getString(R.string.live_blogs_subtitle));
         card.setImage(R.drawable.bulletin);
         card.setBackground(getResources().getColor(R.color.green));
         mList.add(card);
@@ -203,7 +211,33 @@ public class MainFragment extends AicteFragment {
     }
 
     public void onClick(int pos) {
-        startActivity(FullInfoActivity.newIntent(getContext(), pos));
+        if (pos == 0) {
+            startActivity(AboutUsActivity.newIntent(getContext()));
+        }
+        if (pos == 1) {
+            startActivity(BureausActivity.newIntent(getContext()));
+        }
+        if (pos == 2) {
+            startActivity(GrievanceActivity.newIntent(getContext()));
+        }
+        if (pos == 3) {
+            startActivity(ReportsActivity.newIntent(getContext()));
+        }
+        if (pos == 4) {
+            startActivity(StatisticsActivity.newIntent(getContext()));
+        }
+        if (pos == 5) {
+            startActivity(EducationActivity.newIntent(getContext()));
+        }
+        if (pos == 6) {
+            startActivity(StudentsActivity.newIntent(getContext()));
+        }
+        if (pos == 7) {
+            startActivity(BulletinActivity.newIntent(getContext()));
+        }
+        if (pos == 8) {
+            startActivity(LiveBlogsActivity.newIntent(getContext()));
+        }
     }
 
 }
